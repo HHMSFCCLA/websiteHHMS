@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>FAQs</title>
+    <link rel="stylesheet" href="/css/faqs.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <!-- meta? -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img alt="logo">
+                </div>
+                <div class="nav-choices">
+                    <div class="nav-group">
+                        <a class="nav-link" href="index.html">Home</a> <!-- Home Link. Class active is added for an extra shade around the element to indicate what page the user is currently on -->
+                    </div>
+                    <div class="nav-group">
+                        <a class="nav-link" href="about.html">About</a> <i class="fas fa-chevron-down makegodown"></i>
+                        <div class="nav-under invis">
+                            <a class="nav-choices-other" href="events.html">Events</a>
+                            <a class="nav-choices-other" href="programs.html">Programs</a>
+                            <a class="nav-choices-other" href="fcs.html">FCS</a>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <a class="nav-link" href="groups.html">Groups</a><i class="fas fa-chevron-down makegodown"></i>
+                    </div>
+                    <div class="nav-group">
+                        <a class="nav-link">Support</a> <i class="fas fa-chevron-down makegodown"></i>
+                        <div class="nav-under invis">
+                            <a class="nav-choices-other active" href="faqs.html">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-background invis"></div>
+            </div>
+            <div class="nav-separator"></div>
+        </nav>
+        <div class="headertext">
+            <span><p class="headertext-biggest">HHMS</p></span>
+            <span><p class="headertext-big">FCCLA</p></span>
+            <span><p class="headertext-tiny">Invent Your Own Adventure</p></span>
+        </div>
+    </header>
+    <section class="question-left">
+        <h1 class="question-left-actual">What type of students are in FCCLA?
+        </h1>
+        <p class="answer-right">FCCLA is comprised of responsible, respectful, and caring students who are investing their
+            time to make a difference in their lives, and the lives of others. Most FCCLA students go on to be successful
+            people, taking part in the career that they find most enjoyable!
+        </p>
+    </section>
+    <section class="question-right">
+        <h1 class="question-right-actual">Hey, what if I don't know what I want to do?
+        </h1>
+        <p class="answer-left">FCCLA has many opportunities, and everyone is welcome anywhere and in any group. Members are
+            encouraged to find their niche so they can excel. FCCLA wants everyone to feel included and to have a role. </p>
+    </section>
+    <section class="question-left">
+        <h1 class="question-left-actual">Does FCCLA help students in High School?</h1>
+        <p class="answer-right">Confidence. FCCLA helps increase confidence in students, and inclines to make everyone included.
+            For middle schoolers, FCCLA lays a foundation for high school leadership!</p>
+    </section>
+    <footer>
+        <div class="signup">
+
+            <input class="signup-input">
+            <button class="signup-button">Submit</button>
+        </div>
+        <div class="links1">
+            <a class="footer-link" href="http://fcclainc.org">National FCCLA Website</a><br>
+            <a class="footer-link" href="https://www.edison.k12.nj.us/Domain/10">HHMS School Website</a><br>
+            <a class="footer-link">Sources Used</a>
+        </div>
+        <div class="links2">
+            <a class="footer-link" href="https://www.njfccla.org">NJ FCCLA Website</a><br>
+            <a class="footer-link">Sitemap</a><br>
+            <a class="footer-link">Contact Us</a>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script>
+    /* global $ */
+    $(document).ready(function () {
+        var on = false;
+
+        $('.makegodown').on('click', function () {
+            if (on === false) {
+                $('.nav-under').removeClass('invis');
+                $('.nav-separator').addClass('invis');
+                on = true;
+
+            }
+            else if (on === true) {
+                $('.nav-under').addClass('invis');
+                $('.nav-separator').removeClass('invis');
+                on = false;
+            }
+        });
+    });
+</script>
+
+</html>
