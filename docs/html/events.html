@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Events</title>
+        <link rel="stylesheet" href="../css/events.css" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <!-- meta? -->
+    </head>
+    <body>
+                <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <img alt="logo"> 
+                    </div>
+                    <div class="nav-choices">
+                      <div class="nav-group">
+                            <a class="nav-link" href="index.html">Home</a>  <!-- Home Link. Class active is added for an extra shade around the element to indicate what page the user is currently on -->
+                      </div>
+                      <div class="nav-group">
+                        <a class="nav-link" href="about.html">About</a> <i class="fas fa-chevron-down makegodown"></i>
+                        <div class="nav-under invis">
+                            <a class="nav-choices-other active" href="events.html">Events</a>
+                            <a class="nav-choices-other" href="programs.html">Programs</a>
+                            <a class="nav-choices-other" href="fcs.html">FCS</a>
+                        </div>
+                        </div>
+                        <div class="nav-group">
+                        <a class="nav-link" href="groups.html">Groups</a><i class="fas fa-chevron-down makegodown"></i>
+                        </div>
+                        <div class="nav-group"> 
+                        <a class="nav-link">Support</a> <i class="fas fa-chevron-down makegodown"></i>
+                        <div class="nav-under invis">
+                            <a class="nav-choices-other" href="faqs.html">FAQs</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-background invis"></div>    
+                    </div>
+                <div class="nav-separator"></div>
+            </nav>
+            <div class="headertext">
+                <span><p class="headertext-biggest">HHMS</p></span>
+                <span><p class="headertext-big">FCCLA</p></span>
+                <span><p class="headertext-tiny">Invent Your Own Adventure</p></span>
+            </div>
+        </header>
+        <section class="title-description-cont">
+        <div class="title-flex-container">
+            <h1 class="title1 title">WE</h1>
+            <h1 class="title2 title">PARTICIPATE</h1>
+            <h1 class="title3 title">IN</h1>
+        </div>
+        <p class="title-txt-under">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+        ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+        dolor in hendrerit in vulputate velit esse molestie consequat,
+        vel illum dolore eu feugiat nulla facilisis at vero eros et</p>
+        <br>
+        </section>
+        <section class="fall-leadership">
+            <img class="fall-img" src="../media/fallleadership.jpg">
+            <div class="fall-txt">
+                <h1 class="fall-title">Fall Leadership</h1>
+                <br>
+                <p class="fall-text">Fall Leadership is a summit held in Pines Manor, Edison. It is an event where New Jersey schools come together to compete in a friendly manner. To win these competitions, it takes hard work, dedication, and skill.  Without these traits, one cannot win gold.  Our members that represent HHMS are respectful and diligent. We show excellent sportsmanship to the other school even if we get gold or bronze. 
+</p>
+            </div>
+        </section>
+        <section class="spring-leadership">           
+            <div class="spring-txt">
+                <h1 class="spring-title">Spring Leadership</h1>
+                <br>
+                <p class="spring-text">
+Spring Leadership is another summit where New Jersey schools compete over a course of two days. This event is held in Cherry Hill, NJ. Once again, our HHMS Spring Leadership representatives are respectful and hardworking. Our resprenties are very aware of their situation, and will act accordingly. 
+</p>
+            </div>
+            <img class="spring-img" src="../media/springleadership.jpg">
+            </section>
+<footer>
+            <div class="signup">
+      
+                <input class="signup-input" >
+                <button class="signup-button" >Submit</button>
+            </div>  
+            <div class="links1">
+                <a class="footer-link" href="http://fcclainc.org">National FCCLA Website</a><br>
+                <a class="footer-link" href="https://www.edison.k12.nj.us/Domain/10">HHMS School Website</a><br>
+                <a class="footer-link" >Sources Used</a>
+            </div>
+            <div class="links2">
+                <a class="footer-link" href="https://www.njfccla.org">NJ FCCLA Website</a><br>
+                <a class="footer-link">Sitemap</a><br>
+                <a class="footer-link">Contact Us</a>
+            </div>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    /* global $ */
+    $(document).ready(function() {
+        var on = false;
+
+        $('.makegodown').on('click', function() {
+            if (on === false) {
+                $('.nav-under').removeClass('invis');
+                $('.nav-separator').addClass('invis');
+                on = true;
+                
+            }
+            else if (on === true) {
+                $('.nav-under').addClass('invis');
+                $('.nav-separator').removeClass('invis');
+                on = false;
+            }
+        });
+    });
+</script>
+</html>

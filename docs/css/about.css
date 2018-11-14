@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+a {
+  color: white;
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  background-image: linear-gradient(to right, rgba(189, 195, 199, 0.7), rgba(44, 62, 80, 0.7)), url("../media/adventure.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: auto;
+  vertical-align: middle;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-bottom: 6rem; }
+  header nav {
+    padding: 2rem;
+    color: white; }
+    header nav .nav-container {
+      position: relative;
+      height: 1.5rem; }
+      header nav .nav-container .nav-logo {
+        position: absolute;
+        left: 0; }
+      header nav .nav-container .nav-choices {
+        position: absolute;
+        right: 0; }
+        header nav .nav-container .nav-choices .nav-group {
+          display: inline-block;
+          position: relative; }
+        header nav .nav-container .nav-choices .nav-under {
+          position: absolute;
+          left: 1rem;
+          z-index: 2; }
+        header nav .nav-container .nav-choices .nav-choices-other {
+          display: block;
+          font-weight: 700;
+          font-family: "Montserrat";
+          color: white;
+          margin-top: 1rem; }
+        header nav .nav-container .nav-choices .nav-link {
+          font-weight: 700;
+          font-family: "Montserrat";
+          text-transform: uppercase;
+          padding: 1rem;
+          letter-spacing: 2px; }
+          header nav .nav-container .nav-choices .nav-link:not(:first-child) {
+            margin-left: 2rem; }
+          header nav .nav-container .nav-choices .nav-link.active {
+            opacity: 0.6; }
+          header nav .nav-container .nav-choices .nav-link:hover {
+            color: #EF3B42;
+            transition: all .5s ease-in-out;
+            cursor: pointer; }
+    header nav .nav-separator {
+      height: 0.2rem;
+      width: 100%;
+      background-color: white;
+      margin-top: 1rem;
+      z-index: 0; }
+
+.invis {
+  display: none; }
+
+footer {
+  display: flex;
+  background-color: #EF3B42;
+  padding: 2rem; }
+  footer .signup {
+    width: 40%; }
+    footer .signup-input {
+      float: left;
+      width: 25rem;
+      height: 1rem;
+      font-size: 2rem;
+      font-family: "Montserrat";
+      padding: 8px;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      border-left: 3px solid white;
+      background: rgba(255, 255, 255, 0.7); }
+    footer .signup-button {
+      float: left;
+      height: 2.35rem;
+      color: #EF3B42;
+      font-weight: 800;
+      background: white;
+      font-family: "Montserrat";
+      padding: 10px;
+      border: 3px solid white; }
+      footer .signup-button:hover {
+        border: 3px solid white;
+        background: none;
+        color: white;
+        transition: all .5s ease-in-out; }
+  footer .links1 {
+    width: 40%; }
+  footer .links2 {
+    width: 20%; }
+  footer .footer-link {
+    font-family: "montserrat";
+    line-height: 2;
+    font-size: 1.5rem; }
+
+.headertext {
+  margin-top: 6.5rem;
+  text-align: center; }
+  .headertext-biggest {
+    font-family: "lato";
+    font-weight: 900;
+    font-size: 8.8rem;
+    letters-spacing: 3px;
+    color: white; }
+  .headertext-big {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 8.5rem;
+    color: white; }
+  .headertext-tiny {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: white; }
+
+.describer-text {
+  font-family: "PT Sans Narrow", helvetica;
+  color: white;
+  margin-top: 3.8%;
+  font-size: 1.4rem; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  position: absolute; }
+
+::-webkit-scrollbar-track {
+  background: none; }
+
+::-webkit-scrollbar-thumb {
+  background: #EF3B42; }
+
+.whatis {
+  padding: 2rem 4rem;
+  position: relative; }
+  .whatis .heading {
+    border-bottom: 0.1rem solid #C1C1C1;
+    font-family: "Lato";
+    font-size: 2rem;
+    display: inline;
+    padding: 0 8rem;
+    z-index: 1; }
+  .whatis .bckgrnd-txt {
+    z-index: 0;
+    color: rgba(173, 182, 198, 0.8);
+    line-height: 1.5; }
+    .whatis .bckgrnd-txt-reg {
+      display: inline-block;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      z-index: 0; }
+    .whatis .bckgrnd-txt-sml {
+      display: inline-block;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      z-index: 0; }
+  .whatis-txt {
+    z-index: 1;
+    position: absolute;
+    top: 5rem;
+    font-size: 1.5rem;
+    font-family: "PT Sans Narrow";
+    padding: 0 0 6rem 6rem; }
+
+.whatwedo-title {
+  font-size: 2.5rem;
+  font-family: "Lato";
+  text-align: right; }
+
+.whatwedo .title-container {
+  width: 80%; }
+
+.whatwedo .sidedash {
+  width: 20%;
+  height: 0.2rem;
+  background-color: #C1C1C1;
+  margin-top: 1.2rem; }
+
+.whatwedo .flex-cont-1 {
+  display: flex; }
+
+.whatwedo .flex-cont-2 {
+  display: flex;
+  padding: 2rem; }
+
+.whatwedo .slideshow-container {
+  width: 40%;
+  margin-left: 3rem; }
+
+.whatwedo .whatis-text {
+  width: 60%; }
+
+.whatwedo .slideshow {
+  width: 80%;
+  height: 100%;
+  background-image: url("../media/working2.jpg");
+  background-size: cover; }
+
+.whatwedo .backselector {
+  float: left;
+  font-size: 2.5rem;
+  height: 100%;
+  transform: translateY(calc(50% - 1.25rem));
+  width: 2.5rem; }
+
+.whatwedo .frontselector {
+  float: right;
+  font-size: 2.5rem;
+  height: 100%;
+  width: 2.5rem;
+  transform: translateY(calc(50% - 1.25rem)); }
+
+.whatwedo .captions {
+  font-family: Montserrat;
+  margin-left: 5.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800; }
+
+.ourmission .flex-cont-1 {
+  display: flex; }
+
+.ourmission-txt {
+  width: 60%; }
+
+.ourmission-txt {
+  font-family: 'Lato';
+  font-size: 1.5rem;
+  padding: 3rem; }
+
+.ourmission .our-title-container {
+  width: 80%; }
+
+.ourmission .ourmission-title {
+  font-size: 2.5rem;
+  font-family: "Lato"; }
+
+.ourmission-title {
+  font-family: 'Lato';
+  font-size: 3rem; }
+
+.ourmission .count {
+  font-size: 1.5rem; }
+  .ourmission .count-txt {
+    font-family: "PT Sans Narrow";
+    width: 20%;
+    font-size: 1.5rem; }
+
+.ourmission .activecount {
+  display: flex; }
+
+.ourmission .sidedash-mission {
+  width: 20%;
+  height: 0.2rem;
+  background-color: #C1C1C1;
+  margin-top: 1.2rem; }

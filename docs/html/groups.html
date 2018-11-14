@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Groups</title>
+        <link rel="stylesheet" href="../css/groups.css" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+                <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <img alt="logo"> 
+                    </div>
+                    <div class="nav-choices">
+                      <div class="nav-group">
+                            <a class="nav-link" href="index.html">Home</a>  <!-- Home Link. Class active is added for an extra shade around the element to indicate what page the user is currently on -->
+                      </div>
+                      <div class="nav-group">
+                        <a class="nav-link" href="about.html">About</a> <i class="fas fa-chevron-down makegodown"></i>
+                        <div class="nav-under invis">
+                            <a class="nav-choices-other" href="events.html">Events</a>
+                            <a class="nav-choices-other" href="programs.html">Programs</a>
+                            <a class="nav-choices-other" href="fcs.html">FCS</a>
+                        </div>
+                        </div>
+                        <div class="nav-group">
+                        <a class="nav-link active" href="groups.html">Groups</a><i class="fas fa-chevron-down makegodown"></i>
+                        </div>
+                        <div class="nav-group"> 
+                        <a class="nav-link">Support</a> <i class="fas fa-chevron-down makegodown"></i>
+                        <div class="nav-under invis">
+                            <a class="nav-choices-other" href="faqs.html">FAQs</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-background invis"></div>    
+                    </div>
+                <div class="nav-separator"></div>
+            </nav>
+            <div class="headertext">
+                <span><p class="headertext-biggest">HHMS</p></span>
+                <span><p class="headertext-big">FCCLA</p></span>
+                <span><p class="headertext-tiny">Invent Your Own Adventure</p></span>
+            </div>
+        </header>
+        <section class="quote">
+            <div class="quote-container">
+            <h1 class="quote-actual">Nothing Is Particularly Hard if you divide it into small jobs</h1>
+            <h1 class="quote-actual">-Henry Ford</h1>
+            </div>
+            <p class="quote-response">In FCCLA we have divided ourselves into the following groups to accomplish as much as possible.</p>
+        </section>
+        <section class="technology">
+            <div class="leftimg">
+                <img class="img" src="../media/technology.jpg">
+            </div>
+            <div class="righttxt">
+                <h1 class="right-title">Technology</h1>
+                <p class="right-txt">Our Technology Unit is here at FCCLA to help anyone that has any trouble with their Chromebook or even anything that has to do with FCCLA online.</p>
+            </div>
+        </section>
+                <section class="technology">
+            <div class="righttxt">
+                <h1 class="right-title">Fundraising</h1>
+                <p class="right-txt">The Fundraising Unit of FCCLA at Herbert Hoover is very important because they make different treats and foods that they sell for a certain price, and all of the money that they receive, will go to a wonderful cause that betters our community. This year at Herbert Hoover, our Fundraising unit has become extremely large and we had to break the unit into two separate groups, each run by a Vice President and Co-Vice President.</p>
+            </div>
+            <div class="leftimg">
+                <img class="img" src="../media/fundraising.jpg">
+            </div>
+        </section>
+                <section class="technology">
+            <div class="leftimg">
+                <img class="img" src="../media/clarabartonsenior.jpg">
+            </div>
+            <div class="righttxt">
+                <h1 class="right-title">Community Service</h1>
+                <p class="right-txt">Our Community Service group started their journey with the best way possible; by showing our community just how much they mean to the Community Service unit by knitting blankets for the women’s shelter, nearby. The Community Service unit loves to give back to their community in any way possible, such as food drives and even making stuff for different shelters.  </p>
+            </div>
+        </section>
+                        <section class="technology">
+            <div class="righttxt">
+                <h1 class="right-title">Coffee Bar</h1>
+                <p class="right-txt">Every Friday, our Coffee Bar unit comes in early, to make breakfast for our amazing faculty, here at Herbert Hoover. Some of the dishes they serve are, Blueberry Parfaits and a variety of Omelettes. Our faculty loves these amazing dishes which makes our Coffee Bar unit one of the busiest teams every week.</p>
+            </div>
+            <div class="leftimg">
+                <img class="img" src="../media/coffeebar.jpg">
+            </div>
+        </section>
+<footer>
+            <div class="signup">
+      
+                <input class="signup-input" >
+                <button class="signup-button" >Submit</button>
+            </div>  
+            <div class="links1">
+                <a class="footer-link" href="http://fcclainc.org">National FCCLA Website</a><br>
+                <a class="footer-link" href="https://www.edison.k12.nj.us/Domain/10">HHMS School Website</a><br>
+                <a class="footer-link" >Sources Used</a>
+            </div>
+            <div class="links2">
+                <a class="footer-link" href="https://www.njfccla.org">NJ FCCLA Website</a><br>
+                <a class="footer-link">Sitemap</a><br>
+                <a class="footer-link">Contact Us</a>
+            </div>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+    /* global $ */
+    $(document).ready(function() {
+        var on = false;
+
+        $('.makegodown').on('click', function() {
+            if (on === false) {
+                $('.nav-under').removeClass('invis');
+                $('.nav-separator').addClass('invis');
+                on = true;
+                
+            }
+            else if (on === true) {
+                $('.nav-under').addClass('invis');
+                $('.nav-separator').removeClass('invis');
+                on = false;
+            }
+        });
+    });
+</script>
+</html>
